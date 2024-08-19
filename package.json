@@ -6,15 +6,19 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@types/node": "22.3.0",
+    "@types/node": "20.16.0",
     "prisma": "5.18.0",
-    "tsup": "8.2.4",
-    "tsx": "4.17.0",
-    "typescript": "5.5.4"
+    "tsup": "6.6.3",
+    "tsx": "3.14.0",
+    "typescript": "5.5.4",
+    "vite-tsconfig-paths": "4.0.5",
+    "vitest": "0.28.5"
   },
   "dependencies": {
     "@prisma/client": "5.18.0",
